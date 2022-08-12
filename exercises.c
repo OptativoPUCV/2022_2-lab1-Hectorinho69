@@ -58,8 +58,8 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
   Persona* p[3];
-  p[0]->nombre = nombre[];
-  p[0]->rut = rut[];
+  p[0]->nombre = nombre[ ];
+  p[0]->rut = rut[ ];
   p[0]->edad = edad;
    return p;
 }
@@ -78,8 +78,9 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector * v=(Vector*)malloc(n);
-   return NULL;
+  Vector * v=(Vector*)malloc(sizeof(n));
+  
+   return *v;
 }
 
 /*

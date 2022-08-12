@@ -2,3 +2,32 @@ Fri 12 Aug 2022 12:49:14 PM UTC:
  tests:  0|7
 total_score: 0/70
 6ce0364
+Fri 12 Aug 2022 12:55:42 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘suma’:
+exercises.c:15:7: error: ‘a’ redeclared as different kind of symbol
+   15 |   int a, b, c;
+      |       ^
+exercises.c:14:15: note: previous definition of ‘a’ was here
+   14 | void suma(int a, int b, int * c) {
+      |           ~~~~^
+exercises.c:15:10: error: ‘b’ redeclared as different kind of symbol
+   15 |   int a, b, c;
+      |          ^
+exercises.c:14:22: note: previous definition of ‘b’ was here
+   14 | void suma(int a, int b, int * c) {
+      |                  ~~~~^
+exercises.c:15:13: error: ‘c’ redeclared as different kind of symbol
+   15 |   int a, b, c;
+      |             ^
+exercises.c:14:31: note: previous definition of ‘c’ was here
+   14 | void suma(int a, int b, int * c) {
+      |                         ~~~~~~^
+exercises.c:15:13: error: variable ‘c’ set but not used [-Werror=unused-but-set-variable]
+   15 |   int a, b, c;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+23eaaed

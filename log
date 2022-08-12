@@ -48,3 +48,22 @@ Fri 12 Aug 2022 01:05:43 PM UTC:
  tests:  1|6
 total_score: 10/70
 34ba131
+Fri 12 Aug 2022 01:20:29 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:10: error: too few arguments to function ‘sumaN’
+   40 |   suma = sumaN()
+      |          ^~~~~
+exercises.c:21:5: note: declared here
+   21 | int sumaN(int a[], int N) {
+      |     ^~~~~
+exercises.c:40:17: error: expected ‘;’ before ‘}’ token
+   40 |   suma = sumaN()
+      |                 ^
+      |                 ;
+   41 | }
+      | ~                
+Compilation failed
+9f0340b

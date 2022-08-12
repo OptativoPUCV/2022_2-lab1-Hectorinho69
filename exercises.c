@@ -12,7 +12,6 @@ y en c almacena el valor de la suma de a más b.
 */
 
 void suma(int a, int b, int * c) {
-  int a, b, c;
   c = a+b;
 }
 
@@ -38,7 +37,7 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-
+  
 }
 
 /*

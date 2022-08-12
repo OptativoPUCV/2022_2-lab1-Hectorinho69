@@ -31,3 +31,14 @@ exercises.c:15:13: error: variable ‘c’ set but not used [-Werror=unused-but-
 cc1: all warnings being treated as errors
 Compilation failed
 23eaaed
+Fri 12 Aug 2022 01:05:25 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘suma’:
+exercises.c:15:5: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   15 |   c = a+b;
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+f7c8616

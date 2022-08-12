@@ -186,3 +186,39 @@ exercises.c:41:28: error: expected expression before ‘]’ token
       |                            ^
 Compilation failed
 006df9d
+Fri 12 Aug 2022 03:19:03 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:23: error: expected expression before ‘]’ token
+   40 |   int total = sumaN(a[], n);
+      |                       ^
+exercises.c:41:27: error: expected expression before ‘]’ token
+   41 |   int principio = sumaN(a[], n-m);
+      |                           ^
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:4: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   61 |   p.nombre = nombre[];
+      |    ^
+      |    ->
+exercises.c:61:21: error: expected expression before ‘]’ token
+   61 |   p.nombre = nombre[];
+      |                     ^
+exercises.c:62:4: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   62 |   p.rut = rut[];
+      |    ^
+      |    ->
+exercises.c:62:15: error: expected expression before ‘]’ token
+   62 |   p.rut = rut[];
+      |               ^
+exercises.c:63:4: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   63 |   p.edad = edad;
+      |    ^
+      |    ->
+exercises.c:60:12: error: variable ‘p’ set but not used [-Werror=unused-but-set-variable]
+   60 |   Persona* p;
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+eea9531

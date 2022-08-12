@@ -160,3 +160,16 @@ exercises.c:40:7: error: unused variable ‘total’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 b3363db
+Fri 12 Aug 2022 03:10:49 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:23: error: expected expression before ‘]’ token
+   40 |   int total = sumaN(a[], n);
+      |                       ^
+exercises.c:41:28: error: expected expression before ‘]’ token
+   41 |   int principio = sumaN(a[ ], n-m+1);
+      |                            ^
+Compilation failed
+5ea59a4

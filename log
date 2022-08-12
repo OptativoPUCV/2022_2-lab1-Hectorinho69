@@ -173,3 +173,16 @@ exercises.c:41:28: error: expected expression before ‘]’ token
       |                            ^
 Compilation failed
 5ea59a4
+Fri 12 Aug 2022 03:11:21 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:24: error: expected expression before ‘]’ token
+   40 |   int total = sumaN(a[ ], n);
+      |                        ^
+exercises.c:41:28: error: expected expression before ‘]’ token
+   41 |   int principio = sumaN(a[ ], n-m);
+      |                            ^
+Compilation failed
+006df9d

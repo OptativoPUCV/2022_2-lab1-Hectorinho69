@@ -140,3 +140,23 @@ test.c:244:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 a11ed7f
+Fri 12 Aug 2022 03:06:43 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:23: error: expected expression before ‘]’ token
+   40 |   int total = sumaN(a[], n);
+      |                       ^
+exercises.c:41:27: error: expected expression before ‘]’ token
+   41 |   int principio = sumaN(a[], n-m+1);
+      |                           ^
+exercises.c:41:7: error: unused variable ‘principio’ [-Werror=unused-variable]
+   41 |   int principio = sumaN(a[], n-m+1);
+      |       ^~~~~~~~~
+exercises.c:40:7: error: unused variable ‘total’ [-Werror=unused-variable]
+   40 |   int total = sumaN(a[], n);
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b3363db

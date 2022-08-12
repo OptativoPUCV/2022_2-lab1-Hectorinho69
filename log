@@ -336,3 +336,22 @@ exercises.c:63:4: error: ‘*(Persona **)&p’ is a pointer; did you mean to use
       |    ->
 Compilation failed
 0a9f589
+Fri 12 Aug 2022 03:24:36 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:4: error: ‘*(Persona **)&p’ is a pointer; did you mean to use ‘->’?
+   61 |   p->nombre = nombre;
+      |    ^~
+      |    ->
+exercises.c:62:4: error: ‘*(Persona **)&p’ is a pointer; did you mean to use ‘->’?
+   62 |   p->rut = rut;
+      |    ^~
+      |    ->
+exercises.c:63:4: error: ‘*(Persona **)&p’ is a pointer; did you mean to use ‘->’?
+   63 |   p->edad = edad;
+      |    ^~
+      |    ->
+Compilation failed
+789dd64

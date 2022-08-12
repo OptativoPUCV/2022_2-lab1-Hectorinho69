@@ -442,3 +442,25 @@ exercises.c:81:12: error: unused variable ‘v’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 322b749
+Fri 12 Aug 2022 03:32:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:25: error: expected expression before ‘]’ token
+   61 |   p[0]->nombre = nombre[];
+      |                         ^
+exercises.c:62:19: error: expected expression before ‘]’ token
+   62 |   p[0]->rut = rut[];
+      |                   ^
+exercises.c:64:11: error: returning ‘Persona **’ from a function with incompatible return type ‘Persona *’ [-Werror=incompatible-pointer-types]
+   64 |    return p;
+      |           ^
+exercises.c:64:11: error: function returns address of local variable [-Werror=return-local-addr]
+exercises.c: In function ‘crearVector’:
+exercises.c:81:12: error: unused variable ‘v’ [-Werror=unused-variable]
+   81 |   Vector * v=(Vector*)malloc(n);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+7c094f0

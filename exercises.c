@@ -61,7 +61,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
   p[0]->nombre = nombre[];
   p[0]->rut = rut[];
   p[0]->edad = edad;
-   return NULL;
+   return p;
 }
 
 /*

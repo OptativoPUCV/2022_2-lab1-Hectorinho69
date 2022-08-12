@@ -83,3 +83,17 @@ exercises.c:40:19: error: expected expression before ‘]’ token
       |                   ^
 Compilation failed
 5e5770a
+Fri 12 Aug 2022 03:03:36 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:41:19: error: expected expression before ‘]’ token
+   41 |   *suma = sumaN(a[], n) - sumaN(a[], principio);
+      |                   ^
+exercises.c:40:7: error: unused variable ‘principio’ [-Werror=unused-variable]
+   40 |   int principio = n-m;
+      |       ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0d3ff5c

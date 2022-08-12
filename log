@@ -398,3 +398,16 @@ exercises.c:60:12: error: variable ‘p’ set but not used [-Werror=unused-but-
 cc1: all warnings being treated as errors
 Compilation failed
 b8a1fea
+Fri 12 Aug 2022 03:26:23 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:16: error: assignment to expression with array type
+   61 |   p[0]->nombre = nombre;
+      |                ^
+exercises.c:62:13: error: assignment to expression with array type
+   62 |   p[0]->rut = rut;
+      |             ^
+Compilation failed
+24f8520

@@ -549,3 +549,23 @@ exercises.c:66:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 e62548e
+Sat 13 Aug 2022 07:29:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:10: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   64 |   p->edad, edad;
+      |          ^
+exercises.c:64:3: error: statement with no effect [-Werror=unused-value]
+   64 |   p->edad, edad;
+      |   ^
+exercises.c:65:11: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   65 |    return *p;
+      |           ^~
+exercises.c:66:1: error: control reaches end of non-void function [-Werror=return-type]
+   66 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+f824c9d

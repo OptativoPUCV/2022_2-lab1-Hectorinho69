@@ -503,3 +503,9 @@ exercises.c:81:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 cbd6adc
+Sat 13 Aug 2022 06:38:11 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|5
+total_score: 20/70
+59985a7

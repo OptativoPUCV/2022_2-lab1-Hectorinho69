@@ -489,3 +489,17 @@ exercises.c:84:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 db486a2
+Sat 13 Aug 2022 06:37:51 PM UTC: 
+ exercises.c | 7 ++-----
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:80:11: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   80 |    return *v;
+      |           ^~
+exercises.c:81:1: error: control reaches end of non-void function [-Werror=return-type]
+   81 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+cbd6adc
